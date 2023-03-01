@@ -1,0 +1,330 @@
+body {
+    background: black;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 900px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+#cajaderecha {
+    width: 500px;
+    height: 500px;
+    padding: 10px solid yellow;
+    border: 0px solid #21212188;
+    border-left: hidden;
+    margin: 1px solid pink;
+    float: left;
+    background-color: #21212188;
+    border-radius: 0px 5px 5px 0px;
+    overflow: scroll;
+    
+}
+
+#cajaizquierda {
+    width: 60px;
+    height: 500px;
+    padding: 10px solid yellow;
+    border: 0px solid #21212188;
+    border-right: hidden;
+    margin: 1px 1px 1px 0px solid pink; 
+    float: left;
+    background-color: #21212188;
+    border-radius: 5px 0px 0px 5px;
+    position:relative;
+}
+
+#cajacentral {
+    width: 300px;
+    height: 550px;
+    padding: 10px solid yellow; 
+    margin-top: -25px; 
+    float: left;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, transparent, rgba(12, 12, 11, 0.884)),
+    url('/Img_utilizadas/Anne_boleyn.jpg');
+    background-size: cover;
+}
+
+#cajacentral:hover { 
+    background-image: linear-gradient(to bottom, transparent, rgb(12, 12, 11)),
+    url('/Img_utilizadas/Anne_boleyn.jpg');
+}
+
+#nombreyapellido {
+    margin-top: 465px;
+    text-align: center;
+    font-style: italic;
+    visibility: hidden;
+    color:#242817;
+}
+
+/* Links en caja central */
+
+#cajacentral:hover #nombreyapellido {
+    visibility: visible;
+}
+
+#cajacentral:hover li {
+    visibility: visible;
+}
+
+#conlinks {
+    padding-right: 35px;
+    padding-bottom: 22px;
+    color: #242817; 
+    display: inline-block;
+    visibility: hidden;
+}
+
+li a {
+    color: #242817; 
+}
+
+li a:hover {
+    color:#323820;
+}
+
+ul {
+    margin: -28px;
+}
+
+
+.empujar {     /** creo que de buena práctica tiene poco, pero no encontré otra forma de mover los elementos ul/li */
+    width: 1px;
+    height: 1px,
+    display: inline-flexbox;
+    padding-right: 18px;
+}
+
+
+
+.escritoscv {
+    max-width: 450px; 
+    padding-left: 29px;
+    padding-right: 35px;
+    color: #8c8c94;
+    font-family: 'Times New Roman', Times, serif; 
+    text-align: justify;
+    margin-top:0px;
+}
+
+hr {
+    width: 250px;
+    height: 1px;
+    background-image: url(/Img_utilizadas/fondocomocuadro.jpg);
+    background-size: cover;
+    border: 0px;
+    margin-top: 5px;
+}
+
+h1 {
+    padding-top: 5px;
+    padding-left: 25px;
+    margin-bottom: 2px;
+    color: #555947; 
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+
+
+ /* Dropdown */
+
+#cajabotondropdown .dropbtn {
+    width: 60px;
+    height: 60px;
+    background-image: url(/Img_utilizadas/fondocomocuadro.jpg);
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+    border-color:#21212188;
+    border-radius: 5px 0px 0px 0px;
+    align-items: center;
+    
+}
+
+
+
+ .dropdown-content {
+    display: none;
+    position: fixed;
+    background-image: url(/Img_utilizadas/fondocomocuadro.jpg);
+    background-size: cover;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px 0px #2f341e;
+    border-radius: 0px 5px 5px 5px;
+    z-index: 1;
+  }
+  
+  
+  .dropdown-content a {
+    color: #8c8c94;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  
+  .dropdown-content a:hover {background-color: #242817;}
+  
+ 
+  .show {display:block;}
+
+#myDropdown a p {
+    text-align: center;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+
+#a-sin-link:hover {
+ cursor: pointer;
+}
+
+
+/* Caja derecha: contenido especial  */
+#enhancedtexttitle {
+    color:#474d32;
+    font-variant-caps: all-petite-caps;
+    font-size: 21px;
+    font-weight: bold;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#enhancedtexttitle1 {
+    color:#474d32;
+    font-variant-caps: all-petite-caps;
+    font-size: 21px;
+    font-weight: bold;
+    padding-right: 3px;
+}
+
+#enhancedtext {
+    color:#474d32;
+    font-size: 18px;
+    margin-left: -4px;
+    font-weight: bold;
+    font-variant-caps: all-small-caps;
+}
+
+/* Experiencia */
+.listaexperiencia {
+    padding-left: 36px;
+}
+
+#ulexperiencia {
+    margin-top: -7px;
+    margin-bottom: 20px;
+}
+
+/** Habilidades **/
+.html {
+    width: 85%; 
+    background-color: #242817;
+    margin-top: -10px;
+    margin-left: 27px;
+    margin-bottom: 15px;
+    text-align: right;
+    color: #8c8c94;}   
+    
+.css {
+    width: 80%; 
+    background-color: #323820;
+    margin-top: -10px;
+    margin-left: 27px;
+    margin-bottom: 15px;
+    text-align: right;
+    color: #8c8c94;}
+.js {
+    width: 55%; 
+    background-color: #474d32;
+    margin-top: -10px;
+    margin-left: 27px;
+    margin-bottom: 15px;
+    text-align: right;
+    color: #8c8c94;}
+.php {
+    width: 5%; 
+    background-color: #555947;
+    margin-top: -10px;
+    margin-left: 27px;
+    margin-bottom: 15px;
+    text-align: right;
+    color: #8c8c94;}
+
+    /** Referencias */
+#stars-left {
+    color:#87751d;
+    margin-bottom: 1px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+#stars-right {
+    color:#87751d;
+    margin-bottom: 1px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    text-align: right;
+}
+.char {
+    display:block;
+    margin-bottom:1.25em;
+    border-bottom:1px solid var(--borders);
+}
+ 
+.icon-left {
+    width: 50px;
+    height: 50px;
+    padding:9px;
+    margin-bottom: 70px;
+    margin-left: 24px;
+    float: left;
+    margin: 2px solid;
+}
+ 
+.icon-right {
+    width: 50px;
+    height: 50px;
+    padding:9px;
+    margin-bottom: 50px;
+    margin-right: 24px;
+    float: right;
+    margin: 2px solid;
+}
+ 
+.icon-left img, .icon-right img {
+    width: 50px;
+    height: 50px;
+}
+
+#enhancedtext-referencias {
+    color:#474d32;
+    font-size: 18px;
+    margin-left: -4px;
+    font-weight: bold;
+    font-variant-caps: all-small-caps;
+    margin: 0px;
+    margin-top: -5px;
+    padding: 0px;
+}  
+
+#enhancedtext-referenciasr {
+    color:#474d32;
+    font-size: 18px;
+    margin-left: -4px;
+    font-weight: bold;
+    font-variant-caps: all-small-caps;
+    margin: 0px;
+    margin-top: -5px;
+    padding: 0px;
+    text-align: right;
+}  
